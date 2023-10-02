@@ -37,7 +37,7 @@ namespace DogIsland_PAC_Unpacker
                     while (!Directory.Exists(_path))
                     {
                         Console.WriteLine("Path was invalid");
-                        Console.WriteLine("Please enter path to DIP");
+                        Console.WriteLine("Please enter path to root directory");
                         _path = Console.ReadLine().Replace("\"", " ");
                     }
                     Console.WriteLine("Extracting...");
@@ -52,7 +52,7 @@ namespace DogIsland_PAC_Unpacker
                     while (!File.Exists(_path) || !_path.EndsWith(".pac"))
                     {
                         Console.WriteLine("Path was invalid");
-                        Console.WriteLine("Please enter path to DIP");
+                        Console.WriteLine("Please enter path to pac");
                         _path = Console.ReadLine().Replace("\"", " ");
                     }
                     Console.WriteLine("Extracting...");
